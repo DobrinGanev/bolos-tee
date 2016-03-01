@@ -1,0 +1,13 @@
+<map id="bolos.h" name="bolos.h">
+<area shape="rect" id="node4" href="$bolos__core_8h.html" title="BOLOS Input/Output for the TEE. " alt="" coords="197,87,293,114"/>
+<area shape="rect" id="node5" href="$bolos__crypto__common_8h.html" title="Common constants and structures used by the Cryptographic API. " alt="" coords="318,87,482,114"/>
+<area shape="rect" id="node6" href="$bolos__crypto__platform__tee_8h.html" title="TEE HAL of the Cryptographic API. " alt="" coords="506,80,657,121"/>
+<area shape="rect" id="node7" href="$bolos__crypto_8h.html" title="Generic Cryptographic API. " alt="" coords="681,87,788,114"/>
+<area shape="rect" id="node8" href="$bolos__wrapping_8h.html" title="Bind data to a specific device, device session, and running application. " alt="" coords="812,87,935,114"/>
+<area shape="rect" id="node9" href="$bolos__attestation_8h.html" title="Legacy attestation logic compatible with Ledger Wallet. " alt="" coords="959,87,1091,114"/>
+<area shape="rect" id="node10" href="$bolos__endorsement_8h.html" title="Endorsement API used to prove code execution on a secure device. " alt="" coords="1116,87,1263,114"/>
+<area shape="rect" id="node11" href="$bolos__utils_8h.html" title="misc BOLOS utilities functions " alt="" coords="1287,87,1382,114"/>
+<area shape="rect" id="node12" href="$bolos__wallet_8h.html" title="Interface to the main Bitcoin wallet provided to third party applications. " alt="" coords="1406,87,1511,114"/>
+<area shape="rect" id="node13" href="$bolos__ui_8h.html" title="User Interface functions for Bolos TEE. " alt="" coords="1535,87,1617,114"/>
+<area shape="rect" id="node14" href="$bolos__sodium_8h.html" title="Limited libsodium/NaCl implementation. " alt="" coords="1641,87,1754,114"/>
+</map>
