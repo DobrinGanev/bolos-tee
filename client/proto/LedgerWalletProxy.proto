@@ -1,0 +1,102 @@
+option java_package = "com.ledger.wallet.proxy.protobuf";
+option java_outer_classname = "LedgerWalletProxyProtobuf";
+
+/* Types */
+
+message CodeRangeType {
+	required uint32 flags = 1;
+	required uint32 start = 2;
+	required uint32 end = 3;
+	required uint32 dataLength = 4;
+	required bytes data = 5;	
+}
+
+/* Requests */
+
+message OpenSession {
+	optional bytes nvram = 1;
+	optional bytes attestation = 2;
+}
+
+message CloseSession {
+}
+
+message StartCode {
+	required uint32 entryPoint = 1;
+	required uint32 stackSize = 2;
+	repeated CodeRangeType code = 3;
+	optional bytes parameters = 4;
+	required bytes signature = 5;
+} 
+
+message ResumeCode {
+}
+
+message GetNVRAM {
+}
+
+message GetAttestation {
+}
+
+message ExchangeWallet {
+	optional bytes apdu = 1;
+}
+
+message LedgerWalletProxyRequest {
+	optional OpenSession openSession = 1;
+	optional CloseSession closeSession = 2;
+	optional StartCode startCode = 3;
+	optional ResumeCode resumeCode = 4;
+	optional GetNVRAM getNVRAM = 5;
+	optional GetAttestation getAttestation = 6;
+	optional ExchangeWallet exchangeWallet = 7;
+}
+
+/* Responses */
+
+message BusyAck {	
+}
+
+message LogAck {
+	required string message = 1;
+}
+
+message GenericAck {
+}
+
+message GenericErrorAck {
+	optional string reason = 1;
+}
+
+message GetNVRAMAck {
+	required bytes nvram = 1;
+}
+
+message GetAttestationAck {
+	required bytes attestation = 1;
+}
+
+message ExchangeWalletAck {
+	required bytes response = 1;
+}
+
+message StartCodeResponseAck {
+	optional bytes response = 1;
+}
+
+message StartCodeErrorAck {
+	optional uint32 errorCode = 1;
+}
+
+message LedgerWalletProxyResponse {
+ 	optional BusyAck busyAck = 1;
+	optional LogAck logAck = 2;
+	optional GenericAck genericAck = 3;
+	optional GenericErrorAck genericErrorAck = 4;
+	optional GetNVRAMAck getNVRAMAck = 5;
+	optional GetAttestationAck getAttestationAck = 6;
+	optional ExchangeWalletAck exchangeWalletAck = 7;
+	optional StartCodeResponseAck startCodeResponseAck = 8;
+	optional StartCodeErrorAck startCodeErrorAck = 9;
+}
+

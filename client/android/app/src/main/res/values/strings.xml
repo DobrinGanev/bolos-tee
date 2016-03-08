@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Ledger Trustlet Proxy</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_info_text"></string>
+    <string name="main_start">Start server</string>
+    <string name="main_stop">Stop server</string>
+    <string name="main_options">Options</string>
+    <string name="default_port_text">17036</string>
+    <string name="options_message_invalid_port">Invalid port</string>
+    <string name="options_info_text">Enter the port to listen on</string>
+    <string name="options_port_hint">Please enter a port number.</string>
+    <string name="options_submit">Continue</string>
+    <string name="service_not_installed">Ledger Wallet Service is not installed</string>
+    <string name="service_connect_error">Error connecting to Ledger Wallet Service</string>
+    <string name="service_not_ready">Ledger Wallet Service is not ready, please retry later</string>
+
+</resources>
