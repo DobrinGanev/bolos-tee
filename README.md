@@ -42,7 +42,7 @@ Running code
 
   * Build and install Ledger Wallet Proxy (https://github.com/LedgerHQ/bolos-tee/tree/master/client/android) on a development phone on which Ledger Trusted is installed
 
-  * Start a Ledger Wallet Proxy session - make sure the phone is on the same network than the computer used for development
+  * Start a Ledger Wallet Proxy session - make sure the phone is on the same network as the computer used for development
 
   * Load and execute the code using the Python API (as an example you can refer to https://github.com/LedgerHQ/bolos-tee/blob/master/samples/ethereum/test_ethereum.py)
 
