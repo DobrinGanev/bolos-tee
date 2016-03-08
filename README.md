@@ -10,7 +10,7 @@ Building the SDK
 
   * Build the moxiebox cross compiler toolchain from https://github.com/jgarzik/moxiebox (or wait for a Docker image)
 
-  * Build the signing tool from https://github.com/LedgerHQ/bolos-tee/tree/master/tools/signing
+  * Build the signing tool from https://github.com/LedgerHQ/bolos-tee/tree/master/tools/signing (requires [secp256k1](https://github.com/bitcoin/secp256k1) and libelf)
 
   * Build the BOLOS runtime environment from https://github.com/LedgerHQ/bolos-tee/tree/master/runtime
 
