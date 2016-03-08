@@ -9,6 +9,7 @@ Presentation and tutorials
 ==========================
 
   * [Architecture overview](https://medium.com/@Ledger/introducing-bolos-blockchain-open-ledger-operating-system-b9893d09f333)
+  * [Ethereum Hardware Wallet sample use case](https://medium.com/@Ledger/innovating-with-bolos-building-an-ethereum-hardware-wallet-216cf5e248a1)
 
 
 SDK Docker image
