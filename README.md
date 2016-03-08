@@ -11,10 +11,15 @@ Presentation and tutorials
   * [Architecture overview](https://medium.com/@Ledger/introducing-bolos-blockchain-open-ledger-operating-system-b9893d09f333)
 
 
+SDK Docker image
+================
+
+  * If you don't want to compile moxiebox, a pre-built Docker image is available at https://hub.docker.com/r/nbasim/moxiebox-bolos/ - it's still a good idea to sign on an isolated machine though.
+
 Building the SDK
 =================
 
-  * Build the moxiebox cross compiler toolchain from https://github.com/jgarzik/moxiebox (or wait for a Docker image)
+  * Build the moxiebox cross compiler toolchain from https://github.com/jgarzik/moxiebox
 
   * Build the signing tool from https://github.com/LedgerHQ/bolos-tee/tree/master/tools/signing (requires [secp256k1](https://github.com/bitcoin/secp256k1) and libelf)
 
