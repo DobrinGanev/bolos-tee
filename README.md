@@ -5,6 +5,12 @@ Doxygen API available on https://ledgerhq.github.io/bolos-tee/
 
 To be used with Ledger Trustlet application : https://play.google.com/store/apps/details?id=com.ledger.wallet.bootstrap - add your uncompressed secp256k1 public key into "Options" before purchasing.
 
+Presentation and tutorials
+==========================
+
+  * [Architecture overview](https://medium.com/@Ledger/introducing-bolos-blockchain-open-ledger-operating-system-b9893d09f333)
+
+
 Building the SDK
 =================
 
