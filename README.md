@@ -3,7 +3,7 @@ Implementation of Ledger BOLOS for TEE applications
 
 Doxygen API available on https://ledgerhq.github.io/bolos-tee/
 
-To be used with Ledger Trustlet application : https://play.google.com/store/apps/details?id=com.ledger.wallet.bootstrap - add your uncompressed secp256k1 public key into "Options" before purchasing.
+To be used with Ledger Trustlet application : https://play.google.com/store/apps/details?id=com.ledger.wallet.bootstrap - add your uncompressed secp256k1 public key into "Options" before purchasing (if you don't have one, read below to create one)
 
 Presentation and tutorials
 ==========================
@@ -17,6 +17,8 @@ Building the SDK
   * Build the moxiebox cross compiler toolchain from https://github.com/jgarzik/moxiebox (or wait for a Docker image)
 
   * Build the signing tool from https://github.com/LedgerHQ/bolos-tee/tree/master/tools/signing (requires [secp256k1](https://github.com/bitcoin/secp256k1) and libelf)
+
+  * Create a keypair on a trusted computer using the createKey tool - keep the private key private, and enter the public key into the "Options" menu of the Ledger Trustlet application before enabling the license
 
   * Build the BOLOS runtime environment from https://github.com/LedgerHQ/bolos-tee/tree/master/runtime
 
