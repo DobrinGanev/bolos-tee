@@ -129,13 +129,13 @@ int main(int argc, char **argv) {
 	/* The current BOLOS TEE has little memory available for the screen buffer */
 	/* We avoid problems by formatting strings that are not too long */					
 	dump(message + messageOffset, hash + 32 - 20, 8);
-	messageOffset += 8;
+	messageOffset += 16;
 	message[messageOffset++] = '\n';
 	dump(message + messageOffset, hash + 32 - 20 + 8, 8);
-	messageOffset += 8;
+	messageOffset += 16;
 	message[messageOffset++] = '\n';
 	dump(message + messageOffset, hash + 32 - 20 + 16, 4);
-	messageOffset += 4;
+	messageOffset += 8;
 	message[messageOffset++] = '\0';
 	/* A future version of the API will let the user specify the size of the QR code */
  	bls_ui_display_qr(message, iban, encodedAddressLength + 4 + 5);

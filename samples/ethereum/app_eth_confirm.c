@@ -214,7 +214,7 @@ int main(int argc, char **argv) {
 					while (blockOffset != fieldLength) {
 						uint32_t chunkSize = (blockOffset + 8 > fieldLength ? fieldLength - blockOffset : 8);
 						dump(message + messageOffset, tx + offset + blockOffset, chunkSize);
-						messageOffset += chunkSize;
+						messageOffset += chunkSize * 2;
 						blockOffset += chunkSize;
 						if (blockOffset != fieldLength) {
 							message[messageOffset++] = '\n';
