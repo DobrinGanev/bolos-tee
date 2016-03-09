@@ -11,6 +11,20 @@ Presentation and tutorials
   * [Architecture overview](https://medium.com/@Ledger/introducing-bolos-blockchain-open-ledger-operating-system-b9893d09f333)
   * [Ethereum Hardware Wallet sample use case](https://medium.com/@Ledger/innovating-with-bolos-building-an-ethereum-hardware-wallet-216cf5e248a1)
 
+Compatible TEEs
+================
+
+BOLOS-TEE is commercially available on [Trustonic TEEs](https://www.trustonic.com)
+
+The following handsets are recommended to develop and test BOLOS applications supporting a Trusted UI : 
+
+  * Samsung Galaxy S6 (all models and variants)
+  * Samsung Galaxy Note 5 (all models and variants)
+
+To develop and test BOLOS applications without a Trusted UI, most Samsung handsets starting with the Galaxy S3 should be compatible. 
+
+Other manufacturers also include Trustonic TEE. When in doubt, just install our application and find out.
+
 
 SDK Docker image
 ================
