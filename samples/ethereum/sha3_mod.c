@@ -46,7 +46,6 @@ static const uint64_t RC[24] = \
 	v = 0;										\
 	REPEAT5(e; v += s;)
 
-#if 0
 /*** Keccak-f[1600] ***/
 static inline void keccakf(void* state) {
 	uint64_t* a = (uint64_t*)state;
@@ -81,7 +80,6 @@ static inline void keccakf(void* state) {
 		a[0] ^= RC[i];
 	}
 }
-#endif
 
 /******** The FIPS202-defined functions. ********/
 
@@ -106,7 +104,7 @@ static inline void keccakf(void* state) {
 mkapply_ds(xorin, dst[i] ^= src[i])  // xorin
 mkapply_sd(setout, dst[i] = src[i])  // setout
 
-#define P KeccakF1600_StatePermute 
+#define P keccakf 
 #define Plen 200
 
 // Fold P*F over the full blocks of an input.
