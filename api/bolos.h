@@ -55,6 +55,12 @@ The implementation of BOLOS for a Trusted Execution Environment also features de
 
 #define WIDE const
 
+#ifdef __MOXIE__
+#ifndef __MOXIE_LITTLE_ENDIAN__
+#error BOLOS requires a little endian moxie toolchain
+#endif
+#endif
+
 #include "bolos_core.h"
 #include "bolos_crypto_common.h"
 #include "bolos_crypto_platform_tee.h"
