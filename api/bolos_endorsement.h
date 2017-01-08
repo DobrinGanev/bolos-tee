@@ -145,7 +145,7 @@ int bls_endorsement_key1_get_app_secret(uint8_t *out, size_t outLength);
 /**
  * @brief Sign a message using endorsement key 1
  *
- * This call returns the ECDSA signature of a SHA-256 hash of (currently running code hash || message)
+ * This call returns the ECDSA signature of a SHA-256 hash of (message || currently running code hash)
  * by endorsement key 1
  *
  * @param [in] in
